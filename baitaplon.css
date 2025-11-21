@@ -1,0 +1,254 @@
+:root{
+    --primary: #89c4a1 ;
+    --primary-dark : #e55555;
+    --dark: #2e2e2e;
+    --light: #f8f8f8;
+     }
+
+body{
+    font-family: 'Segoe UI', system-ui ,  sans-serif;
+   color: var(--dark);
+    background-color: var(--light);
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-direction: row;
+
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.logo:hover{
+    color: var(--primary);
+    transition: color 1s;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+nav a {
+     text-decoration: none;
+     color: var(--dark);
+     font-size: 20px;
+     font-weight: 500;
+     transition: color 1s;
+     position: relative;
+}
+nav a:hover{
+    color: var(--primary);
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: var(--primary);
+    transition: width 0.3s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+hr {
+     border: none;
+    border-top: 1.5px solid #e0e0e0;
+    margin: 30px 0 ;
+}
+.chaomung{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-direction: column;
+    background-color: var(--primary-dark);
+    border-radius: 40px;
+
+}
+.chaomung h2 {
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary);
+}
+.chaomung h1 {
+    font-size: 48px ;
+    margin-top: 0;
+    margin-bottom: 40;
+     font-weight: 800;
+    line-height: 1.2;
+    max-width: 700px;
+}
+.chaomung span {
+    color: var(--primary);
+}
+.chaomung p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--dark);
+    max-width: 600px;
+}
+
+.trangchuvadichvu{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.trangchuvadichvu h3 {
+    margin-top: 10px;
+}
+.trangchuvadichvu h2:hover{
+    color: var(--primary);
+    transition: color 1s;
+}
+.trangchuvadichvu h3:hover{
+    transition: color 1s;
+     color: var(--primary);
+}
+.item-label{
+ background-color: #e2f3eb;
+ padding: 15px 10px;
+ margin-bottom: 15px;
+ color: black;
+ border-left:10px solid #a7d7c5;
+ border-radius: 20px;
+}
+.item-label h4,p {
+    font-size: 24px;
+    font-weight: 600;
+}
+.item-label:hover{
+    transform: translateX(10px);
+}
+.giomocua{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.giomocua div {
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+   background-color: var(--primary);
+   border-radius: 20px;
+   transition: transform 1s;
+   transition: color 0.5s;
+   margin: auto 70px;
+ 
+}
+.giomocua div:hover{
+   transform: scale(1.5);
+   color: var(--light);
+    
+}
+.form{
+    border: 1px solid #a7d7c5 ;
+    background-color: #f8fdfb ;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+.datlich input,select,textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.form button{
+    display: block;
+    margin: 0 auto;
+}
+button {
+  background-color: #007e5a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00593e;
+}
+.datlichtieude{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.services{
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 80px;
+}
+.services article {
+    background-color:#f8f8f8;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: var(--primary);
+    
+
+}
+.services h3 {
+text-align: center;
+}
+.services article:hover {
+    transform: translateY(10px);
+}
+.trangdichvu h2 {
+    text-align: center;
+}
+.reviews {
+    border: 2px solid;
+    margin-top: 20PX;
+    background-color: #a7d7c5;
+    border-radius: 20px;
+    padding: 20px 15px;
+   
+}
+.reviews .tieudereviews{
+    text-align: center;
+}
+.commentreview{
+    display: flex;
+    flex-direction: column;
+}
+.commentreview textarea{
+    width: 98%;
+    min-height: 100px;
+   
+}
+.commentreview button {
+    width: 80px;
+   display: block;
+   margin: 0 auto;
+}
+.footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--light);
+    border-radius: 20px;
+    background-color: var(--primary);
+}
+ 
+
+
+
